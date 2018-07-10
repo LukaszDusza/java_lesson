@@ -20,7 +20,7 @@ public class Main {
         }
 
         System.out.println();
-        countingsort();
+        counting_sort();
         System.out.println("Tablica po posortowaniu: ");
         for (i=1;i<c;i++) {
             if (tablica[i]!=0)
@@ -29,8 +29,7 @@ public class Main {
 
     }
 
-
-    private static void countingsort() {
+    private static void counting_sort() {
         int i,k;
         for (i=0;i<20;i++)
             count[i]=0;//zerowanie tablicy pomocniczej
