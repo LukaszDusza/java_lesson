@@ -1,0 +1,2 @@
+1;patelnia;23.4;kuchenne;
+2;garnki;120.45;kuchenne;
