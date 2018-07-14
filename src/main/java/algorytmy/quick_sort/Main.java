@@ -36,7 +36,7 @@ public class Main {
 
         i=x;
         j=y;
-        v=tablica[(x+y) / 2];
+        v=tablica[(x+y) / 2]; //dzielimy
         do {
             while (tablica[i]<v)
                 i++;

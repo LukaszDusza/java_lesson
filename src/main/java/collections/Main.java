@@ -9,6 +9,8 @@ public class Main {
     public static void main(String[] args) {
 
 
+
+
       //LIST
       List<Person> people = loadList(); //ladujemy liste przykladowymi obiektami.
         view(people);
@@ -157,5 +159,7 @@ public class Main {
         }
         System.out.println("============= END VIEW MAP ===================");
     }
+
+
 
 }

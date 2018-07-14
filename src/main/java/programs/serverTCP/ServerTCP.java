@@ -25,7 +25,7 @@ public class ServerTCP extends Thread{
                 "HTTP/1.1 200 OK\r\n\r\n"
                 + "<!DOCTYPE html>"
                 + "<html><head></head><title>Server TCP</title><body>"
-                + "<br/><center><b>Witaj na serwerze TCP Akademii Kodu:)</br><center>"
+                + "<br/><center><b>Witaj na moim serwerze TCP :)</br><center>"
                 + "</body></html>";
 
         byte[] response = responseMessage.getBytes();

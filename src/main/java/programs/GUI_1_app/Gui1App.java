@@ -25,7 +25,7 @@ public class Gui1App {
     public Gui1App() {
         JFrame guiFrame = new JFrame();
 
-//make sure the program exits when the frame closes
+//make sure the przyklad1 exits when the frame closes
         guiFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         guiFrame.setTitle("Example GUI");
         guiFrame.setSize(300,250);

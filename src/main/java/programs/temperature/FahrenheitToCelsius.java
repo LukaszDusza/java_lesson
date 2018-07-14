@@ -7,7 +7,7 @@ public class FahrenheitToCelsius {
         System.out.println("Enter the temperature in Fahrenheit: ");
         Scanner scanner = new Scanner(System.in);
         float fahrenheit = scanner.nextFloat();
-        float celsius = (fahrenheit - 32)*5/9; //todo sprawdzic poprawosc dzialania.
+        float celsius = (fahrenheit - 32)*5/9;
         System.out.println("Temperature in Celsius: " + celsius);
     }
 }

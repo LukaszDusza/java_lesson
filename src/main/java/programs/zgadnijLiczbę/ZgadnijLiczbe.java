@@ -1,15 +1,12 @@
 package programs.zgadnijLiczbę;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Random;
+import java.util.Scanner;
 
 public class ZgadnijLiczbe {
-    public static void main(String[] args) throws NumberFormatException, IOException
-    {
-        // TODO Auto-generated method stub
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public static void main(String[] args) throws NumberFormatException {
+
+        Scanner scanner = new Scanner(System.in);
         boolean wynik = false;
         int ktory_raz=1;
         Random rand = new Random();
@@ -17,7 +14,7 @@ public class ZgadnijLiczbe {
         while (wynik==false)
         {
             System.out.print("Wprowadź liczbę z zakresu 0-100: ");
-            int zgadnij = Integer.parseInt(reader.readLine());
+            int zgadnij = scanner.nextInt();
             if(zgadnij==liczba)
             {
                 System.out.println("Znalazłeś szukaną liczbę!!!");

@@ -29,6 +29,7 @@ public class PalindromNumberOrString {
 
         while (num > 0) {
             long remainder = num % 10;
+            System.out.println(remainder);
             reverseNo = reverseNo * 10 + remainder;
             num = num / 10;
         }

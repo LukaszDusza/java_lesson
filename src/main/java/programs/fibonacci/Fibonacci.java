@@ -4,9 +4,9 @@ public class Fibonacci {
 
     public static void main(String[] args) {
         long preTime = System.currentTimeMillis();
-        System.out.println("Value " + fibonacci(32));
+        System.out.println("Value " + fibonacci(4));
         long postTime = System.currentTimeMillis();
-        System.out.println("time taken to compute in milisec: " + (postTime - preTime));
+        System.out.println("time taken to compute in sec: " + ((postTime - preTime)*0.01));
     }
 
 

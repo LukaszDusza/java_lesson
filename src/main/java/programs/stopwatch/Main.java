@@ -1,42 +1,57 @@
 package programs.stopwatch;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Main {
-    private long startTime;
-    private long stopTime;
+    static private long startTime;
+    static private long stopTime;
     public static final double NANOS_PER_SEC = 1000000000.0;
 
 
     public static void main(String[] args) {
 
-        Main main = new Main();
 
-        main.start();
+        List<Integer> numbers = new ArrayList<>();
 
-        for (int i = 0; i < 100; i++) {
+        start();
+        for (int i = 0; i < 10000; i++) {
             Random r = new Random();
-            r.nextInt();
+            numbers.add(r.nextInt());
         }
+        stop();
+        System.out.println(time());
+        resetCounter();
 
-        main.stop();
+        start();
+        for (int i = 0; i < numbers.size(); i++) {
+            numbers.remove(i);
+        }
+        stop();
+        System.out.println(time());
+        resetCounter();
 
-        double d = main.timeInNanoseconds();
-        System.out.println(d);
+
+
+    //    double d = timeInNanoseconds();
+    //    double t = time();
+     //   System.out.println(d);
+     //   System.out.println(time());
     }
 
 
     /**
      start the stop watch.
      */
-    public void start(){
+    public static void start(){
         startTime = System.nanoTime();
     }
 
     /**
      stop the stop watch.
      */
-    public void stop() {
+    public static void stop() {
         stopTime = System.nanoTime();
     }
 
@@ -44,8 +59,13 @@ public class Main {
      elapsed time in seconds.
      @return the time recorded on the stopwatch in seconds
      */
-    public double time()
+    public static double time()
     {	return (stopTime - startTime) / NANOS_PER_SEC;	}
+
+    public static void resetCounter() {
+        stopTime = 0;
+        startTime = 0;
+    }
 
     public String toString(){
         return "elapsed time: " + time() + " seconds.";
@@ -55,7 +75,7 @@ public class Main {
      elapsed time in nanoseconds.
      @return the time recorded on the stopwatch in nanoseconds
      */
-    public long timeInNanoseconds()
+    public static long timeInNanoseconds()
     {	return (stopTime - startTime);	}
 
 }
